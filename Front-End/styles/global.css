@@ -1,0 +1,312 @@
+@import '/node_modules/bootstrap/dist/css/bootstrap.css';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;  /*CAMBIAR TIPO DE LETRA*/
+}
+
+body {
+    background-color: #f4f4f4; 
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #383637; 
+    padding: 10px;
+    
+}
+
+/* xxxxx ASIGNAR TIPO DE FUENTE DE LETRAS DESPUES SE LE AGREGA xxxxxxxx*/
+
+header .logo {
+    display: flex;
+    margin-right: 50%;
+}
+
+.logo {
+    text-decoration: none;
+    color: #fff; 
+    font-size: 24px;
+}
+
+header img {
+    margin-left: 4%;
+    width: 3%;
+    height: auto;
+}
+.navbar {
+
+    margin-bottom: -35px;
+}
+.navbar ul {
+    list-style-type: none;
+
+    display: flex;
+}
+
+.navbar li {
+    margin: 0 10px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    font-size: 18px;
+}
+
+/* ASIDE IMAGEN DE FONDO     */
+.content {
+    background-image: url(/Front-End/img/img-principal.png);
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Cambiado a 100vh */
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+   
+}
+
+.content span {
+    font-size: 45px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center; /* Centrar el texto */
+    margin-right: 50%;
+    font-family: cursive;
+}
+
+
+/*NOSOTROSSSSSSSSSS*/
+
+.text-center{
+
+    margin: 5%;
+    margin-bottom: -6%;
+}
+
+/* Estilo para hacer las imágenes más pequeñas */
+/* Estilo para hacer las imágenes un poco más pequeñas */
+.carousel-item img {
+    width: 10%; /* Reducir el ancho de la imagen */
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+/* Estilo para hacer el contenedor del carrusel más pequeño */
+#carouselExampleCaptions {
+    max-width: 70%; /* Ajustar el ancho máximo según tus necesidades */
+    margin: 10% auto; /* Centrar vertical y horizontalmente */
+}
+
+
+
+/*EQUIPO*/
+
+.equipo-main {
+    text-align: center; /* Centrar el texto "Equipo" */
+    background-color: #0D0C1C;
+    padding: 10% 0; /* Ajustar el relleno (padding) arriba y abajo */
+    color: #ABAEB8;
+    margin-top: -6%;
+
+}
+
+
+.equipo-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinear las imágenes y textos hacia arriba */
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.equipo-member {
+    
+    width: calc(33.33% - 30px);
+    margin: 10px;
+    text-align: center;
+
+}
+
+
+.card-img-top {
+    width: 100px;
+    height: 100px;
+    border-radius: 40%;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.card-title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.card-text {
+    padding: 20px;
+    font-size: 18px;
+}
+
+.card{
+    margin-top: 4%;
+    color: white;
+    background-color: #0D0C1C;
+}
+
+.linkedin-icon {
+    font-size: 20px;
+    color: blue;
+    margin-top: 10px;
+}
+
+.text-main  {
+    font-size: 33px;
+    color: #fff;
+    margin-top: -6%;
+
+}
+
+/*AREAS*/
+
+.card-areas {
+    border: 1px solid #ccc; /* Añade un borde */
+    border-radius: 10px; /* Añade esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añade sombra */
+    margin-bottom: 20px; /* Añade espacio inferior entre las tarjetas */
+}
+
+.row {
+    background-color: rgb(231, 231, 231);
+}
+
+.card-areas .card-body {
+    padding: 20px; 
+}
+
+.card-areas .card-title {
+    font-size: 22px; /* Tamaño del título */
+    font-weight: bold; 
+    color: #333; /* Color del texto */
+}
+
+.card-areas .card-text {
+    font-size: 18px; /* Tamaño del texto */
+    color: #000000; /* Color del texto */
+}
+
+.card-areas h2{   
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/*LINEA*/
+.div-lineal {
+    background-color: red;
+}
+
+/*FORMULARIO*/
+
+.container-formulario{
+    max-width: 500px;
+    margin: 5%;
+    padding: 30px;            
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    /* width: 30%;
+    margin: 10%;
+    background-color: red; */
+}
+
+.container-formulario label {
+    font-weight: bold;
+}
+
+
+/* footer */
+footer {
+    background-color: #0D0C1C;
+    color: #fff;
+    padding: 20px;
+}
+
+.footer-column {
+    margin-bottom: 20px;
+    width: 100%;
+  
+    /* linea blanca */
+    height: 1px;
+    background-color: white;
+    border: none;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+}
+
+.footer-column ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-column ul li {
+    margin: 0 10px;
+    position: relative;
+}
+
+/*SERVICIO AL CLIENTE*/
+.container {
+    text-align: right;
+    /* border-radius: 10px; */
+}
+
+.container label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container p {
+    margin-bottom: 10px;
+}
+
+.container .span-container {
+    text-align: center;
+    justify-content: center;
+}
+
+.container span {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.container a {
+    display: block; 
+    width: 35%;
+    text-align: left;
+    
+}
+
+.left-align {
+    text-align: left;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.center-align {
+    margin: 0 auto; 
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: inherit;
+    font-size: 0.9em; 
+}
