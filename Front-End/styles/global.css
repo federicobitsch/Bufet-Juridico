@@ -13,6 +13,7 @@ body {
 
 
 header {
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,13 +22,13 @@ header {
     
 }
 
-/* xxxxx ASIGNAR TIPO DE FUENTE DE LETRAS DESPUES SE LE AGREGA xxxxxxxx*/
+/* xx ASIGNAR TIPO DE FUENTE DE LETRAS DESPUES SE LE AGREGA */
 
 header .logo {
     display: flex;
     margin-right: 50%;
 }
-
+   
 .logo {
     text-decoration: none;
     color: #fff; 
@@ -82,19 +83,21 @@ header img {
 }
 
 
-/*NOSOTROSSSSSSSSSS*/
+/* Seccion de NOSOTROS*/
 
 .text-center{
-
-    margin: 5%;
+    font-weight: bold;
+    color: black;
+    font-size: 30px;
+    margin: 2%;
     margin-bottom: -6%;
 }
 
-/* Estilo para hacer las imágenes más pequeñas */
+
 /* Estilo para hacer las imágenes un poco más pequeñas */
 .carousel-item img {
-    width: 10%; /* Reducir el ancho de la imagen */
-    margin: 0 auto; /* Centrar horizontalmente */
+    width: 10%; 
+    margin: 0 auto; 
 }
 
 /* Estilo para hacer el contenedor del carrusel más pequeño */
@@ -104,13 +107,27 @@ header img {
 }
 
 
+.texto-main {
+    bottom: 5%;
+    display: flex;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
 
 /*EQUIPO*/
-
 .equipo-main {
-    text-align: center; /* Centrar el texto "Equipo" */
+    text-align: center; 
     background-color: #0D0C1C;
-    padding: 10% 0; /* Ajustar el relleno (padding) arriba y abajo */
+    padding: 12% 0; 
     color: #ABAEB8;
     margin-top: -6%;
 
@@ -120,7 +137,7 @@ header img {
 .equipo-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Alinear las imágenes y textos hacia arriba */
+    align-items: flex-start; 
     flex-wrap: wrap;
     width: 100%;
 }
@@ -133,6 +150,11 @@ header img {
 
 }
 
+.card img{
+    width: 26%;
+    height: auto;
+
+}
 
 .card-img-top {
     width: 100px;
@@ -143,14 +165,13 @@ header img {
 }
 
 .card-title {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 
-
 .card-text {
     padding: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .card{
@@ -172,7 +193,7 @@ header img {
 
 }
 
-/*AREAS*/
+/*seccion AREAS*/
 
 .card-areas {
     border: 1px solid #ccc; /* Añade un borde */
@@ -182,6 +203,7 @@ header img {
 }
 
 .row {
+
     background-color: rgb(231, 231, 231);
 }
 
@@ -190,14 +212,14 @@ header img {
 }
 
 .card-areas .card-title {
-    font-size: 22px; /* Tamaño del título */
+    font-size: 22px; 
     font-weight: bold; 
-    color: #333; /* Color del texto */
+    color: #333; 
 }
 
 .card-areas .card-text {
-    font-size: 18px; /* Tamaño del texto */
-    color: #000000; /* Color del texto */
+    font-size: 18px; 
+    color: #000000; 
 }
 
 .card-areas h2{   
@@ -212,101 +234,257 @@ header img {
     background-color: red;
 }
 
+.equipo-member i{
+    font-size: 40px;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
 /*FORMULARIO*/
-
-.container-formulario{
-    max-width: 500px;
-    margin: 5%;
-    padding: 30px;            
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    /* width: 30%;
-    margin: 10%;
-    background-color: red; */
+.form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8rem; /*Distancia del formulario y locacion*/
+    padding: 10px;
+   
 }
 
-.container-formulario label {
+.form h2{
+    font-size: 30px;
     font-weight: bold;
+    color: #0a0a0a;
 }
 
+
+.container-formulario {
+    width: 100%; 
+    max-width: 700px;
+    border-radius: .2rem;
+    padding: 30px;
+    border: 4px solid #ddd;
+    border-radius: 10px;
+    background-color: #F5F6FA;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 5%;
+
+    
+
+    /*TEXTO del formulario*/
+    label {
+      color: black;
+      font-weight: 600;
+    }
+
+    #formulario {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+      place-items: center;
+      gap: 2rem;
+       
+      .row {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: .8rem;
+        
+
+        input {
+          padding: .5rem;
+          outline: none;
+          border: none;
+          border-radius: .3rem;
+          
+        }
+      }
+
+      #message {
+        outline: none;
+        border: none;
+        resize: none;
+        padding: .7rem;
+        margin-top: .5rem;
+      }
+
+      .btn {
+        border: none;
+        outline: none;
+        background: none;
+        width: 90%;
+        padding: .5rem;
+        border-radius: .3rem;
+        color: #fff;
+        background-color: #192A56;
+      }
+    }
+  }
+
+  /*NUESTRA LOCACION IMAGEN*/
+
+  .imagen-formulario {
+    outline: 2px solid rgb(22, 22, 24);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .imagen-formulario {
+    width: 600px;
+    padding: 30px;
+    
+  }
+  
+  .text-formulario {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    .content-text {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      font-size: .8em;
+      margin: 30px;
+     
+      font-size: 16px;
+   
+    }
+}
+
+iframe{
+    width: 100%;
+}
+.imagen-formulario h3{
+    font-weight: bold;
+    padding: 1px;
+}
+.imagen-formulario i{
+
+    font-size: 18px;
+    color: #61CA88;
+}
 
 /* footer */
 footer {
     background-color: #0D0C1C;
     color: #fff;
-    padding: 20px;
-}
-
-.footer-column {
-    margin-bottom: 20px;
-    width: 100%;
-  
-    /* linea blanca */
-    height: 1px;
-    background-color: white;
-    border: none;
-}
-
-.footer-column h3 {
-    margin-bottom: 10px;
-}
-
-.footer-column ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-}
-
-.footer-column ul li {
-    margin: 0 10px;
-    position: relative;
-}
-
-/*SERVICIO AL CLIENTE*/
-.container {
-    text-align: right;
-    /* border-radius: 10px; */
-}
-
-.container label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.container p {
-    margin-bottom: 10px;
-}
-
-.container .span-container {
-    text-align: center;
-    justify-content: center;
-}
-
-.container span {
-    text-align: center;
-    font-size: 1.2em;
-    font-weight: bold;
-}
-
-.container a {
-    display: block; 
-    width: 35%;
-    text-align: left;
+    padding: 1px;
+    position: relative; /* Para posicionar las líneas correctamente */
+    text-align: center; /* Para centrar los elementos */
     
 }
 
-.left-align {
-    text-align: left;
-    margin-bottom: 10px;
-    text-decoration: none;
-    color: inherit;
+.footer-icons {
+    margin-bottom: 22px; /* Espacio entre la línea y los iconos */
+    position: relative;
 }
 
-.center-align {
-    margin: 0 auto; 
-    margin-bottom: 10px;
+.footer-icons ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    
+}
+
+.footer-icons ul li {
+    display: inline-block;
+    margin: 0 10px;
+    
+
+}
+.footer-icons ul li a i {
+    font-size: 45px; /* Tamaño de los iconos */
+    color: white;
+    margin: 12px;
+}
+
+.line {
+    width: 40%; /* Ancho de la línea */
+    height: 2px;
+    background-color: white;
+    margin-bottom: 20px; /* Espacio entre la línea y el contenido de abajo */
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    left: 0;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+.right-line {
+    width: 40%; /* Ancho de la línea */
+    height: 2px;
+    background-color: white;
+    margin-bottom: 20px; /* Espacio entre la línea y el contenido de abajo */
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+}
+
+
+.text-center{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    color:white ;
+    font-weight: bold;
+    
+}
+
+
+.container-cliente label{
+    font-size: 17px;
+    margin-left: 80%;
+    font-weight: bold;
+
+}
+
+.container-cliente .parrafo{
+
+    font-size: 16px;
+    display:flex;
+    justify-content: end;
+    font-weight: bold;
+    margin-right: 100px;
+    margin: 2%;
+}
+
+.container-cliente .parrafo a{
+    color: white;
     text-decoration: none;
-    color: inherit;
-    font-size: 0.9em; 
+}
+
+.parrafo a:hover{
+    background-color: #12224d
+
+}
+
+
+
+.container-cliente .clientes{
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    text-align: center;
+    justify-content: start;
+    width: 30%;
+    position: absolute;
+    top: 60%;
+    left: 5%;
+
+
+}
+
+.container-cliente .copy{
+
+    margin-bottom: 1px;
 }
